@@ -1,0 +1,13 @@
+.header {
+  padding-top: rem(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    }
+}
+
+

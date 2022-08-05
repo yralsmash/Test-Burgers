@@ -1,0 +1,29 @@
+.best {
+  background: url("../../img/bg/best-bg.jpg") center center / cover no-repeat;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1%;
+  }
+  
+  &__desc {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: "Lifehack";
+    font-size: rem(24px);
+    color: $black;
+    margin-bottom: rem(17px);
+  }
+}

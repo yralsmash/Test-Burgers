@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: $red;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+
+  &--reset {
+    background: transparent;
+  }
+}

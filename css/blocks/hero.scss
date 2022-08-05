@@ -1,0 +1,19 @@
+.hero {
+  background: url("../../img/bg/hero-bg.jpg") center center / cover no-repeat;
+
+  &__container {
+    display: flex;
+    flex: .75;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__desc {
+    font-family: 'Lifehack';
+    font-size: rem(65px);
+    color: #fff;
+  }
+}

@@ -1,0 +1,15 @@
+.title {
+  color: $yellow;
+  font-family: "Gagalin";
+  font-size: rem(72px);
+  margin-bottom: rem(20px);
+  text-align: center;
+
+  &--color-black {
+    color: #000;
+  }
+
+  &--color-white {
+    color: #fff;
+  }
+}
