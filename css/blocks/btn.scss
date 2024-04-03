@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: $orange;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  &--bg-black {
+    background: $black;
+  }
+  &--submit {
+    background: transparent;
+    font-weight: 300;
+    text-transform: none;
+    font-size: 14px;
+  }
+}

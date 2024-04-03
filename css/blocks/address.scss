@@ -1,0 +1,18 @@
+.address {
+  color: #fff;
+  font-style: normal;
+  &__text {
+    font-weight: 300;
+  }
+  &__phone {
+    font-weight: bold;
+    color: $orange;
+    text-decoration: none;
+    &:hover {
+      transition: 1s;
+      color: $red;
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+}

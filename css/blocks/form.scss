@@ -1,0 +1,111 @@
+.form {
+  color: #fff;
+  display: flex;
+  font-weight: 300;
+  &__side {
+    width: 50%;
+    margin-right: 20px;
+    &::last-child {
+      margin-right: 0;
+    }
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__block {
+    flex: 1;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &-input {
+      padding: 7px 19px;
+      outline: none;
+      border-radius: 5px;
+      width: 100%;
+      border: solid 2px transparent;
+      &:focus {
+        border: solid 2px $yellow;
+      }
+      &--textarea {
+        resize: none;
+      }
+    }
+  }
+  &__radio {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    margin-right: 20px;
+    &-real {
+      display: none;
+      &:checked {
+        ~ .form__radio-visible:after {
+          opacity: 1;
+        }
+        ~ .form__radio-title {
+          color: $red;
+          transition: 1s;
+        }
+      }
+    }
+    &-visible {
+      background: #fff;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+      &:after {
+        content: '';
+        display: block;
+        background: $red;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+      }
+    }
+  }
+  &__checkbox {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    &-real {
+      display: none;
+      &:checked {
+        ~ .form__checkbox-visible:after {
+          opacity: 1;
+        }
+        ~ .form__checkbox-title {
+          color: $red;
+          transition: 1s;
+        }
+      }
+    }
+    &-visible {
+      background: #fff;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      margin-right: 10px;
+      &:after {
+        content: '';
+        display: block;
+        background: $red;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+      }
+    }
+  }
+}

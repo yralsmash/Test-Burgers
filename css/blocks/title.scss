@@ -1,0 +1,9 @@
+.title {
+  color: $yellow;
+  font-size: 72px;
+  margin-bottom:10px;
+  font-family: 'Gagalin', sans-serif;
+  &--color-black {
+    color: $black;
+  }
+}

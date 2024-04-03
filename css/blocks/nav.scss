@@ -1,0 +1,28 @@
+.nav {
+  margin-right: 15px;
+  &__list {
+    display: flex;
+  }
+  &__item:last-child .nav__link:after {
+    display: none;
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    &:after {
+      content: '';
+      width: 4px;
+      height: 4px;
+      display: block;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 15.5px;
+    }
+  }
+}
+
