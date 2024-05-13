@@ -8,21 +8,34 @@
   &__content {
     display: flex;
     align-items: center;
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 10%;
+    }
   }
-  &__picture {
-    margin-right: 11px;
-    height: 100%;
+  &__burger {
+    margin-right: rem(11px);
+    @include tablets {
+      margin-right: 0;
+    }
+    &-img {
+      max-width: 100%;
+    }
   }
   &__text {
     display: inline-block;
     vertical-align: middle;
   }
   &__subtitle {
-    font-size: 65px;
-    font-family: 'Lifehack', sans-serif;
+    font-size: rem(65px);
+    font-family: "Lifehack", sans-serif;
     font-weight: 500;
     color: #fff;
     line-height: 1.31;
-    letter-spacing: -1.63px;
+    letter-spacing: rem(-1.63px);
+    @include phones {
+      font-size: rem(54px);
+    }
   }
 }

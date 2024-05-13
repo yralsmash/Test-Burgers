@@ -1,5 +1,8 @@
 .nav {
-  margin-right: 15px;
+  margin-right: rem(10px);
+  @include tablets {
+    display: none;
+  }
   &__list {
     display: flex;
   }
@@ -9,20 +12,19 @@
   &__link {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: rem(11.5px);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     font-weight: 500;
     &:after {
-      content: '';
-      width: 4px;
-      height: 4px;
+      content: "";
+      width: rem(4px);
+      height: rem(4px);
       display: block;
       border-radius: 50%;
       background: #fff;
-      margin: 0 15.5px;
+      margin: 0 rem(10px);
     }
   }
 }
-

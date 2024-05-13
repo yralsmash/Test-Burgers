@@ -1,3 +1,22 @@
 .socials {
   display: flex;
+  &__item {
+    margin-right: rem(20px);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.vk,
+.fb,
+.inst,
+.tw {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  opacity: 0.3;
+  transition: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
 }

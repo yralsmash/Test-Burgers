@@ -1,27 +1,38 @@
-html,body {
+html {
+  font-size: 16px;
+  @include tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-size: rem(16px);
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: $black;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .container {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  max-width: 940px;
+  max-width: rem(940px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -31,16 +42,16 @@ body {
     justify-content: initial;
     align-items: initial;
   }
+  @include tablets {
+    width: 95%;
+  }
 }
 
 .wrapper {
   position: relative;
-  width: 100%;
-  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
-
 
 // tag styles reset
 
@@ -48,7 +59,12 @@ body {
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin: 0;
 }

@@ -5,5 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 7%;
+  padding: rem(10px) 7%;
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+  }
 }
